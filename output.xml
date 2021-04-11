@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on darwin)" generated="20210411 21:28:42.067" rpa="false" schemaversion="2">
+<suite id="s1" name="Safari" source="/Users/puntakarnkaewsanghan/Desktop/Git/robot_framework/safari.robot">
+<test id="s1-t1" name="เข้า Google">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>https://www.google.co.th</arg>
+<arg>browser=safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210411 21:28:42.285" level="INFO">Opening browser 'safari' to base url 'https://www.google.co.th'.</msg>
+<status status="PASS" starttime="20210411 21:28:42.285" endtime="20210411 21:28:44.379"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>q</arg>
+<arg>Hello World!!!!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210411 21:28:44.383" level="INFO">Typing text 'Hello World!!!!' into text field 'q'.</msg>
+<status status="PASS" starttime="20210411 21:28:44.380" endtime="20210411 21:28:44.567"/>
+</kw>
+<status status="PASS" starttime="20210411 21:28:42.284" endtime="20210411 21:28:44.568"/>
+</test>
+<status status="PASS" starttime="20210411 21:28:42.068" endtime="20210411 21:28:44.570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Safari">Safari</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
