@@ -2,6 +2,10 @@
 Library         Selenium2Library
 
 *** Test Cases ***
-เข้า Google
-    Open Browser    https://www.google.co.th     browser=safari
-    Input Text  q   Hello World!!!!
+ค้นหาสินค้าหรือบริการ
+    Open Browser    https://www.pantipmarket.com     browser=safari
+    Input text  name=search_keyword  computer
+    Click Button    name=search_button
+    Wait Until Page Contains     ผลการค้นหา
+    Click Link  //*[@id="listitem_container"]/div/ul/li[2]/span/a
+    Close Browser
