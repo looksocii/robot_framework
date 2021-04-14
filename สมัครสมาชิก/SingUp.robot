@@ -1,7 +1,7 @@
 *** Settings ***
 Library     Selenium2Library
 Test Setup      Open Web Site Pantipmarket On Browser
-# Test Teardown   Close Browser
+Test Teardown   Close Browser
 
 # ทดสอบการสมัครสมาชิกของเว็บไซต์ pantipmarket.com โดยมี Test Case ดังต่อไปนี้
 *** Test Cases ***
@@ -17,17 +17,29 @@ Test Setup      Open Web Site Pantipmarket On Browser
 #     Select Checkbox     except_privacy_policy
 
 กรอกข้อมูลไม่ครบ (test to fail)
-    Input Text      username    aopup1122
+    Input Text      username    aop1122
     Input Password  password    Puntakarn1234567890
     Input Password  confirm_password    Puntakarn1234567890
     Input Text  name    พันธกานต์
-    # Input Text  sname   แก้วสังหาร
     Input Text  email   aop1122@hotmail.com
     Input Text  phone   0801800391
-    Input Text  display_name    พันธกานต์ แก้วสังหาร
+    Input Text  display_name    Puntakarn Kaewsanghan
     Select Checkbox     except_privacy_policy
-    Click Button    //*[@id="btn_register_submit"]
+    Submit Form
     Alert Should Be Present    กรุณาใส่ "นามสกุล" ให้ถูกต้องด้วยค่ะ
+
+รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน (test to fail)
+    Input Text      username    aop1122
+    Input Password  password    Puntakarn1234567890
+    Input Password  confirm_password    nfjggnriirfn
+    Input Text  name    พันธกานต์
+    Input Text  sname   แก้วสังหาร
+    Input Text  email   aop1122@hotmail.com
+    Input Text  phone   0801800391
+    Input Text  display_name    Puntakarn Kaewsanghan
+    Select Checkbox     except_privacy_policy
+    Submit Form
+    Alert Should Be Present    กรุณาใส่ "Password (รหัสผ่าน)" ให้ตรงกับ "Confirm Password (ยืนยันรหัสผ่าน)" ด้วยค่ะ
 
 *** Keywords ***
 Open Web Site Pantipmarket On Browser
