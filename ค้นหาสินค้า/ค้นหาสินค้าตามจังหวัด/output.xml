@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0 (Python 3.9.2 on darwin)" generated="20210421 19:20:01.129" rpa="false" schemaversion="2">
+<suite id="s1" name="SearchByProvince" source="/Users/puntakarnkaewsanghan/Desktop/Git/robot_framework/ค้นหาสินค้า/ค้นหาสินค้าตามจังหวัด/SearchByProvince.robot">
+<test id="s1-t1" name="TC01 - ค้นหาตามจังหวัดพังงาและเลือกราคาตั้งแต่ 0 ถึง 1000 บาท (test to pass)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com</arg>
+<arg>browser=safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 19:20:01.249" level="INFO">Opening browser 'safari' to base url 'https://www.pantipmarket.com'.</msg>
+<status status="PASS" starttime="20210421 19:20:01.249" endtime="20210421 19:20:04.602"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210421 19:20:04.603" endtime="20210421 19:20:04.617"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>สงวนลิขสิทธิ์ © 2561 บริษัท พันทิปมาร์เก็ต จำกัด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:20:04.617" endtime="20210421 19:20:04.631"/>
+</kw>
+<status status="PASS" starttime="20210421 19:20:01.249" endtime="20210421 19:20:04.631"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210421 19:20:04.632" endtime="20210421 19:20:04.633"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:20:04.634" level="INFO">Clicking button '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210421 19:20:04.633" endtime="20210421 19:20:14.847"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[68]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210421 19:20:14.850" level="INFO">Clicking element '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[68]/a'.</msg>
+<status status="PASS" starttime="20210421 19:20:14.849" endtime="20210421 19:20:18.930"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>พังงา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:20:18.931" endtime="20210421 19:20:20.964"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:action"]</arg>
+<arg>S1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:20:20.967" level="INFO">Selecting options from selection list '//*[@id="filter:action"]' by value S1.</msg>
+<status status="PASS" starttime="20210421 19:20:20.965" endtime="20210421 19:20:35.078"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:product_status"]</arg>
+<arg>N</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:20:35.080" level="INFO">Selecting options from selection list '//*[@id="filter:product_status"]' by value N.</msg>
+<status status="PASS" starttime="20210421 19:20:35.079" endtime="20210421 19:20:49.201"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:member_type"]</arg>
+<arg>M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:20:49.203" level="INFO">Selecting options from selection list '//*[@id="filter:member_type"]' by value M.</msg>
+<status status="PASS" starttime="20210421 19:20:49.202" endtime="20210421 19:21:03.323"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price1]</arg>
+<arg>0</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:21:03.325" level="INFO">Typing text '0' into text field 'filter[price1]'.</msg>
+<status status="PASS" starttime="20210421 19:21:03.324" endtime="20210421 19:21:09.423"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price2]</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:21:09.424" level="INFO">Typing text '1000' into text field 'filter[price2]'.</msg>
+<status status="PASS" starttime="20210421 19:21:09.423" endtime="20210421 19:21:15.517"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>btn_form_filter</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:21:15.519" level="INFO">Clicking button 'btn_form_filter'.</msg>
+<status status="PASS" starttime="20210421 19:21:15.517" endtime="20210421 19:21:21.588"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>โปรแกรมทัวร์,แพ็คเกจทัวร์,พังงา,Phangnga</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:21:21.589" endtime="20210421 19:21:23.615"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210421 19:21:23.617" endtime="20210421 19:21:25.654"/>
+</kw>
+<status status="PASS" starttime="20210421 19:20:01.247" endtime="20210421 19:21:25.654"/>
+</test>
+<test id="s1-t2" name="TC02 - ค้นหาตามจังหวัดอุดรธานีและเลือกราคาตั้งแต่ 0 ถึง 1000 บาท (test to pass)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com</arg>
+<arg>browser=safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 19:21:25.664" level="INFO">Opening browser 'safari' to base url 'https://www.pantipmarket.com'.</msg>
+<status status="PASS" starttime="20210421 19:21:25.664" endtime="20210421 19:21:30.900"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210421 19:21:30.901" endtime="20210421 19:21:32.928"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>สงวนลิขสิทธิ์ © 2561 บริษัท พันทิปมาร์เก็ต จำกัด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:21:32.929" endtime="20210421 19:21:34.954"/>
+</kw>
+<status status="PASS" starttime="20210421 19:21:25.663" endtime="20210421 19:21:34.955"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210421 19:21:34.956" endtime="20210421 19:21:34.958"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:21:34.959" level="INFO">Clicking button '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210421 19:21:34.958" endtime="20210421 19:21:45.116"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[58]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210421 19:21:45.118" level="INFO">Clicking element '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[58]/a'.</msg>
+<status status="PASS" starttime="20210421 19:21:45.116" endtime="20210421 19:21:49.192"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>อุดรธานี</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:21:49.193" endtime="20210421 19:21:51.220"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:action"]</arg>
+<arg>S1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:21:51.225" level="INFO">Selecting options from selection list '//*[@id="filter:action"]' by value S1.</msg>
+<status status="PASS" starttime="20210421 19:21:51.222" endtime="20210421 19:22:05.341"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:product_status"]</arg>
+<arg>N</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:22:05.343" level="INFO">Selecting options from selection list '//*[@id="filter:product_status"]' by value N.</msg>
+<status status="PASS" starttime="20210421 19:22:05.342" endtime="20210421 19:22:19.455"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:member_type"]</arg>
+<arg>M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:22:19.458" level="INFO">Selecting options from selection list '//*[@id="filter:member_type"]' by value M.</msg>
+<status status="PASS" starttime="20210421 19:22:19.457" endtime="20210421 19:22:33.576"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price1]</arg>
+<arg>0</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:22:33.579" level="INFO">Typing text '0' into text field 'filter[price1]'.</msg>
+<status status="PASS" starttime="20210421 19:22:33.577" endtime="20210421 19:22:39.684"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price2]</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:22:39.686" level="INFO">Typing text '1000' into text field 'filter[price2]'.</msg>
+<status status="PASS" starttime="20210421 19:22:39.685" endtime="20210421 19:22:45.816"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>btn_form_filter</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:22:45.818" level="INFO">Clicking button 'btn_form_filter'.</msg>
+<status status="PASS" starttime="20210421 19:22:45.817" endtime="20210421 19:22:51.906"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${price1}</var>
+<arg>//*[@id="contentcolumn"]/div/div/ul/li[10]/div[3]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210421 19:22:55.957" level="INFO">${price1} = 0 บาท</msg>
+<status status="PASS" starttime="20210421 19:22:51.908" endtime="20210421 19:22:55.957"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${str}</var>
+<arg>${price1}</arg>
+<arg>บาท</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20210421 19:22:55.960" level="INFO">${str} = 0 </msg>
+<status status="PASS" starttime="20210421 19:22:55.958" endtime="20210421 19:22:55.960"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${val}</var>
+<arg>${str}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20210421 19:22:55.962" level="INFO">${val} = 0.0</msg>
+<status status="PASS" starttime="20210421 19:22:55.961" endtime="20210421 19:22:55.962"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${val} &gt;= 0 and ${val} &lt;= 1000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20210421 19:22:55.963" endtime="20210421 19:22:55.967"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${price2}</var>
+<arg>//*[@id="contentcolumn"]/div/div/ul/li[9]/div[3]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210421 19:22:59.993" level="INFO">${price2} = 1,000 บาท</msg>
+<status status="PASS" starttime="20210421 19:22:55.968" endtime="20210421 19:22:59.993"/>
+</kw>
+<kw name="Remove String" library="String">
+<var>${str}</var>
+<arg>${price2}</arg>
+<arg>บาท</arg>
+<arg>,</arg>
+<doc>Removes all ``removables`` from the given ``string``.</doc>
+<msg timestamp="20210421 19:22:59.996" level="INFO">${str} = 1000 </msg>
+<status status="PASS" starttime="20210421 19:22:59.994" endtime="20210421 19:22:59.996"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${val}</var>
+<arg>${str}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20210421 19:22:59.998" level="INFO">${val} = 1000.0</msg>
+<status status="PASS" starttime="20210421 19:22:59.997" endtime="20210421 19:22:59.998"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${val} &gt;= 0 and ${val} &lt;= 1000</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20210421 19:22:59.999" endtime="20210421 19:23:00.001"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210421 19:23:00.002" endtime="20210421 19:23:02.032"/>
+</kw>
+<status status="PASS" starttime="20210421 19:21:25.656" endtime="20210421 19:23:02.032"/>
+</test>
+<test id="s1-t3" name="TC03 - ค้นหาตามจังหวัดอุดรธานีและเลือกราคาตั้งแต่ 200 ถึง 5 บาท (test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com</arg>
+<arg>browser=safari</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210421 19:23:02.043" level="INFO">Opening browser 'safari' to base url 'https://www.pantipmarket.com'.</msg>
+<status status="PASS" starttime="20210421 19:23:02.042" endtime="20210421 19:23:07.583"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210421 19:23:07.585" endtime="20210421 19:23:09.623"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>สงวนลิขสิทธิ์ © 2561 บริษัท พันทิปมาร์เก็ต จำกัด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:23:09.624" endtime="20210421 19:23:11.652"/>
+</kw>
+<status status="PASS" starttime="20210421 19:23:02.041" endtime="20210421 19:23:11.654"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210421 19:23:11.655" endtime="20210421 19:23:11.656"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:23:11.658" level="INFO">Clicking button '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20210421 19:23:11.657" endtime="20210421 19:23:21.809"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[58]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210421 19:23:21.812" level="INFO">Clicking element '//*[@id="section_main_content"]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div/div/ul/li[58]/a'.</msg>
+<status status="PASS" starttime="20210421 19:23:21.811" endtime="20210421 19:23:25.894"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>Standard Post</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:23:25.895" endtime="20210421 19:23:27.943"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:action"]</arg>
+<arg>S1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:23:27.946" level="INFO">Selecting options from selection list '//*[@id="filter:action"]' by value S1.</msg>
+<status status="PASS" starttime="20210421 19:23:27.944" endtime="20210421 19:23:42.058"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:product_status"]</arg>
+<arg>N</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:23:42.060" level="INFO">Selecting options from selection list '//*[@id="filter:product_status"]' by value N.</msg>
+<status status="PASS" starttime="20210421 19:23:42.059" endtime="20210421 19:23:56.159"/>
+</kw>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>//*[@id="filter:member_type"]</arg>
+<arg>M</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210421 19:23:56.161" level="INFO">Selecting options from selection list '//*[@id="filter:member_type"]' by value M.</msg>
+<status status="PASS" starttime="20210421 19:23:56.160" endtime="20210421 19:24:10.260"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price1]</arg>
+<arg>200</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:24:10.262" level="INFO">Typing text '200' into text field 'filter[price1]'.</msg>
+<status status="PASS" starttime="20210421 19:24:10.261" endtime="20210421 19:24:16.359"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>filter[price2]</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210421 19:24:16.361" level="INFO">Typing text '5' into text field 'filter[price2]'.</msg>
+<status status="PASS" starttime="20210421 19:24:16.360" endtime="20210421 19:24:22.468"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>btn_form_filter</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210421 19:24:22.470" level="INFO">Clicking button 'btn_form_filter'.</msg>
+<status status="PASS" starttime="20210421 19:24:22.469" endtime="20210421 19:24:28.541"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ไม่พบข้อมูล</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210421 19:24:28.542" endtime="20210421 19:24:30.573"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210421 19:24:30.574" endtime="20210421 19:24:32.602"/>
+</kw>
+<status status="PASS" starttime="20210421 19:23:02.033" endtime="20210421 19:24:32.602"/>
+</test>
+<status status="PASS" starttime="20210421 19:20:01.130" endtime="20210421 19:24:32.606"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="SearchByProvince">SearchByProvince</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
