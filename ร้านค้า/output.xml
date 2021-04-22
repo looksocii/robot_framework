@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.9.1 on win32)" generated="20210423 05:28:02.769" rpa="false" schemaversion="2">
+<suite id="s1" name="Shop" source="D:\Svv\robot_framework-master\ร้านค้า\Shop.robot">
+<test id="s1-t1" name="TC03 - เพิ่มร้านค้า ไม่มียี่ห้อ(test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:28:03.014" endtime="20210423 05:28:03.015"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:28:03.015" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:28:03.015" endtime="20210423 05:28:04.739"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:28:04.739" endtime="20210423 05:28:05.073"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:05.073" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:28:05.073" endtime="20210423 05:28:05.801"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:05.801" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:28:06.254" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:28:06.538" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:28:05.801" endtime="20210423 05:28:06.538"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:06.538" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:06.538" endtime="20210423 05:28:12.891"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:03.014" endtime="20210423 05:28:12.891"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>nobrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:12.892" level="INFO">Clicking button 'nobrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:12.892" endtime="20210423 05:28:13.574"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:13.575" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:13.575" endtime="20210423 05:28:14.444"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:14.444" endtime="20210423 05:28:14.660"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:14.661" level="INFO">Clicking element '//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]'.</msg>
+<status status="PASS" starttime="20210423 05:28:14.660" endtime="20210423 05:28:15.111"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:15.112" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:15.111" endtime="20210423 05:28:15.977"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ประเภทสินค้า: Category(Tags):</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:15.977" endtime="20210423 05:28:16.193"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>headline</arg>
+<arg>Product Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:16.194" level="INFO">Typing text 'Product Test' into text field 'headline'.</msg>
+<status status="PASS" starttime="20210423 05:28:16.194" endtime="20210423 05:28:16.887"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>price</arg>
+<arg>99</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:16.888" level="INFO">Typing text '99' into text field 'price'.</msg>
+<status status="PASS" starttime="20210423 05:28:16.888" endtime="20210423 05:28:17.574"/>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<arg>${item_pic}</arg>
+<arg>${imgFile}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20210423 05:28:17.574" level="INFO">Sending D:\Svv\robot_framework-master\ร้านค้า\football.jpg to browser.</msg>
+<status status="PASS" starttime="20210423 05:28:17.574" endtime="20210423 05:28:18.024"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="newuploadDIV"]/form/table/tbody/tr[2]/td/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:18.025" level="INFO">Clicking button '//*[@id="newuploadDIV"]/form/table/tbody/tr[2]/td/input'.</msg>
+<status status="PASS" starttime="20210423 05:28:18.025" endtime="20210423 05:28:18.693"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>submitname</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:18.694" level="INFO">Clicking button 'submitname'.</msg>
+<status status="PASS" starttime="20210423 05:28:18.694" endtime="20210423 05:28:19.375"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ระบบได้บันทึกตามต้องการแล้ว</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:19.376" endtime="20210423 05:28:19.594"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:19.595" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:19.595" endtime="20210423 05:28:20.459"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:28:20.460" endtime="20210423 05:28:22.740"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:03.009" endtime="20210423 05:28:22.741"/>
+</test>
+<test id="s1-t2" name="TC01 - เพิ่มสินค้า ไม่มียี่ห้อ ไม่เลือกหมวดหมู่ (test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:28:22.745" endtime="20210423 05:28:22.746"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:28:22.746" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:28:22.746" endtime="20210423 05:28:24.418"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:28:24.418" endtime="20210423 05:28:24.749"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:24.750" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:28:24.749" endtime="20210423 05:28:25.494"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:25.495" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:28:25.955" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:28:26.222" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:28:25.494" endtime="20210423 05:28:26.222"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:26.222" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:26.222" endtime="20210423 05:28:27.514"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:22.745" endtime="20210423 05:28:27.514"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>nobrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:27.515" level="INFO">Clicking button 'nobrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:27.515" endtime="20210423 05:28:28.196"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:28.197" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:28.197" endtime="20210423 05:28:29.070"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:29.070" endtime="20210423 05:28:29.289"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:29.290" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:29.289" endtime="20210423 05:28:30.161"/>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<arg>เลือกหมวดสินค้าก่อน</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20210423 05:28:30.162" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210423 05:28:30.161" endtime="20210423 05:28:30.775"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:28:30.776" endtime="20210423 05:28:33.089"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:22.742" endtime="20210423 05:28:33.090"/>
+</test>
+<test id="s1-t3" name="TC02 - เพิ่มสินค้า ไม่มียี่ห้อ ไม่ใส่ประเภท/ไม่ใส่ราคา(test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:28:33.095" endtime="20210423 05:28:33.096"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:28:33.096" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:28:33.096" endtime="20210423 05:28:34.799"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:28:34.799" endtime="20210423 05:28:35.131"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:35.131" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:28:35.131" endtime="20210423 05:28:35.855"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:35.855" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:28:36.302" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:28:36.551" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:28:35.855" endtime="20210423 05:28:36.551"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:36.551" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:36.551" endtime="20210423 05:28:37.877"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:33.095" endtime="20210423 05:28:37.877"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>nobrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:37.878" level="INFO">Clicking button 'nobrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:37.878" endtime="20210423 05:28:38.564"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:38.565" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:38.565" endtime="20210423 05:28:39.433"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:39.434" endtime="20210423 05:28:39.651"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:39.651" level="INFO">Clicking element '//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]'.</msg>
+<status status="PASS" starttime="20210423 05:28:39.651" endtime="20210423 05:28:40.100"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:40.100" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:40.100" endtime="20210423 05:28:40.972"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ประเภทสินค้า: Category(Tags):</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:40.973" endtime="20210423 05:28:41.189"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>submitname</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:41.190" level="INFO">Clicking button 'submitname'.</msg>
+<status status="PASS" starttime="20210423 05:28:41.190" endtime="20210423 05:28:41.882"/>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<arg>ป้อนหัวข้อสำหรับสินค้าชิ้นนี้</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20210423 05:28:41.883" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210423 05:28:41.882" endtime="20210423 05:28:42.501"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:28:42.502" endtime="20210423 05:28:44.770"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:33.091" endtime="20210423 05:28:44.771"/>
+</test>
+<test id="s1-t4" name="TC04 - เพิ่มร้านค้า มียี่ห้อ(test to pass)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:28:44.775" endtime="20210423 05:28:44.775"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:28:44.775" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:28:44.775" endtime="20210423 05:28:46.457"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:28:46.457" endtime="20210423 05:28:46.790"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:46.790" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:28:46.790" endtime="20210423 05:28:47.517"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:47.517" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:28:47.967" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:28:48.216" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:28:47.517" endtime="20210423 05:28:48.216"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:48.216" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:48.216" endtime="20210423 05:28:49.476"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:44.774" endtime="20210423 05:28:49.476"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>havebrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:49.478" level="INFO">Clicking button 'havebrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:49.477" endtime="20210423 05:28:50.160"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>engbrand</arg>
+<arg>PRODUCT TEST</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:50.161" level="INFO">Typing text 'PRODUCT TEST' into text field 'engbrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:50.161" endtime="20210423 05:28:50.894"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>thaibrand</arg>
+<arg>สินค้าทดลอง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:50.895" level="INFO">Typing text 'สินค้าทดลอง' into text field 'thaibrand'.</msg>
+<status status="PASS" starttime="20210423 05:28:50.895" endtime="20210423 05:28:51.601"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>model</arg>
+<arg>ไม่มี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:51.602" level="INFO">Typing text 'ไม่มี' into text field 'model'.</msg>
+<status status="PASS" starttime="20210423 05:28:51.601" endtime="20210423 05:28:52.297"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:52.298" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:52.297" endtime="20210423 05:28:53.165"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ชื่อยี่ห้อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:53.166" endtime="20210423 05:28:53.384"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:53.384" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:53.384" endtime="20210423 05:28:54.258"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:28:54.258" endtime="20210423 05:28:54.476"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:54.477" level="INFO">Clicking element '//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]'.</msg>
+<status status="PASS" starttime="20210423 05:28:54.477" endtime="20210423 05:28:54.933"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:54.934" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:54.934" endtime="20210423 05:28:55.817"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>Meta-Overview</arg>
+<arg>สินค้าทดลอง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:55.818" level="INFO">Typing text 'สินค้าทดลอง' into text field 'Meta-Overview'.</msg>
+<status status="PASS" starttime="20210423 05:28:55.818" endtime="20210423 05:28:56.545"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:56.546" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:28:56.545" endtime="20210423 05:28:57.415"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>itempromote</arg>
+<arg>สินค้าลิมิเต็ด</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:57.416" level="INFO">Typing text 'สินค้าลิมิเต็ด' into text field 'itempromote'.</msg>
+<status status="PASS" starttime="20210423 05:28:57.416" endtime="20210423 05:28:58.138"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>price</arg>
+<arg>15000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:58.139" level="INFO">Typing text '15000' into text field 'price'.</msg>
+<status status="PASS" starttime="20210423 05:28:58.138" endtime="20210423 05:28:58.852"/>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<arg>${item_pic}</arg>
+<arg>${imgFile}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20210423 05:28:58.853" level="INFO">Sending D:\Svv\robot_framework-master\ร้านค้า\football.jpg to browser.</msg>
+<status status="PASS" starttime="20210423 05:28:58.852" endtime="20210423 05:28:59.313"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="newuploadDIV"]/form/table/tbody/tr[2]/td/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:59.314" level="INFO">Clicking button '//*[@id="newuploadDIV"]/form/table/tbody/tr[2]/td/input'.</msg>
+<status status="PASS" starttime="20210423 05:28:59.314" endtime="20210423 05:28:59.988"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>submitname</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:28:59.989" level="INFO">Clicking button 'submitname'.</msg>
+<status status="PASS" starttime="20210423 05:28:59.989" endtime="20210423 05:29:00.672"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ชื่อยี่ห้อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:00.672" endtime="20210423 05:29:00.890"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:00.890" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:00.890" endtime="20210423 05:29:01.760"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:29:01.760" endtime="20210423 05:29:04.084"/>
+</kw>
+<status status="PASS" starttime="20210423 05:28:44.772" endtime="20210423 05:29:04.085"/>
+</test>
+<test id="s1-t5" name="TC05 - เพิ่มร้านค้ามียี่ห้อ ไม่ใส่ชื่อยี่ห้อ/ชื่อรุ่น(test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:29:04.089" endtime="20210423 05:29:04.089"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:29:04.090" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:29:04.089" endtime="20210423 05:29:05.746"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:29:05.746" endtime="20210423 05:29:06.076"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:06.077" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:29:06.076" endtime="20210423 05:29:06.818"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:06.818" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:29:07.269" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:29:07.522" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:29:06.818" endtime="20210423 05:29:07.522"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:07.522" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:07.522" endtime="20210423 05:29:08.768"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:04.089" endtime="20210423 05:29:08.768"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>havebrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:08.769" level="INFO">Clicking button 'havebrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:08.769" endtime="20210423 05:29:09.451"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:09.452" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:09.452" endtime="20210423 05:29:10.325"/>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<arg>ป้อนชื่อยี่ห้อ(ภาษาอังกฤษ)</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20210423 05:29:10.326" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210423 05:29:10.326" endtime="20210423 05:29:10.933"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:29:10.934" endtime="20210423 05:29:13.235"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:04.086" endtime="20210423 05:29:13.236"/>
+</test>
+<test id="s1-t6" name="TC06 - เพิ่มร้านค้ามียี่ห้อ ไม่ใส่เลือกหมวดหมู่(test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:29:13.240" endtime="20210423 05:29:13.240"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:29:13.240" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:29:13.240" endtime="20210423 05:29:14.928"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:29:14.928" endtime="20210423 05:29:15.261"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:15.262" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:29:15.261" endtime="20210423 05:29:16.005"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:16.005" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:29:16.456" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:29:16.706" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:29:16.005" endtime="20210423 05:29:16.706"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:16.706" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:16.706" endtime="20210423 05:29:18.671"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:13.239" endtime="20210423 05:29:18.671"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>havebrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:18.672" level="INFO">Clicking button 'havebrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:18.672" endtime="20210423 05:29:19.358"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>engbrand</arg>
+<arg>PRODUCT TEST</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:19.359" level="INFO">Typing text 'PRODUCT TEST' into text field 'engbrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:19.359" endtime="20210423 05:29:20.092"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>thaibrand</arg>
+<arg>สินค้าทดลอง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:20.093" level="INFO">Typing text 'สินค้าทดลอง' into text field 'thaibrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:20.093" endtime="20210423 05:29:20.814"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>model</arg>
+<arg>ไม่มี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:20.815" level="INFO">Typing text 'ไม่มี' into text field 'model'.</msg>
+<status status="PASS" starttime="20210423 05:29:20.815" endtime="20210423 05:29:21.528"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:21.529" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:21.529" endtime="20210423 05:29:22.410"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ชื่อยี่ห้อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:22.411" endtime="20210423 05:29:22.633"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:22.634" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:22.634" endtime="20210423 05:29:23.489"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:23.489" endtime="20210423 05:29:23.709"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:23.710" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:23.710" endtime="20210423 05:29:24.581"/>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<arg>เลือกหมวดสินค้าก่อน</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20210423 05:29:24.582" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210423 05:29:24.582" endtime="20210423 05:29:25.197"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:29:25.198" endtime="20210423 05:29:27.495"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:13.238" endtime="20210423 05:29:27.496"/>
+</test>
+<test id="s1-t7" name="TC07 - เพิ่มร้านค้ามียี่ห้อ ไม่ใส่ข้อมูลสินค้า(test to fail)">
+<kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>0.2 second</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210423 05:29:27.500" endtime="20210423 05:29:27.501"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>url=https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210423 05:29:27.501" level="INFO">Opening browser 'chrome' to base url 'https://www.pantipmarket.com/mall/center/BackOffice/redirect.php?menu=1&amp;Midx=2'.</msg>
+<status status="PASS" starttime="20210423 05:29:27.501" endtime="20210423 05:29:29.296"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210423 05:29:29.296" endtime="20210423 05:29:29.628"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>mem_name</arg>
+<arg>Core2931</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:29.628" level="INFO">Typing text 'Core2931' into text field 'mem_name'.</msg>
+<status status="PASS" starttime="20210423 05:29:29.628" endtime="20210423 05:29:30.388"/>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<arg>mem_passwd</arg>
+<arg>Core123456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:30.388" level="INFO">Typing password into text field 'mem_passwd'.</msg>
+<msg timestamp="20210423 05:29:30.846" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210423 05:29:31.113" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210423 05:29:30.388" endtime="20210423 05:29:31.113"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:31.114" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:31.113" endtime="20210423 05:29:33.247"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:27.499" endtime="20210423 05:29:33.247"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>havebrand</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:33.248" level="INFO">Clicking button 'havebrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:33.248" endtime="20210423 05:29:33.939"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>engbrand</arg>
+<arg>PRODUCT TEST</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:33.940" level="INFO">Typing text 'PRODUCT TEST' into text field 'engbrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:33.939" endtime="20210423 05:29:34.680"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>thaibrand</arg>
+<arg>สินค้าทดลอง</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:34.681" level="INFO">Typing text 'สินค้าทดลอง' into text field 'thaibrand'.</msg>
+<status status="PASS" starttime="20210423 05:29:34.680" endtime="20210423 05:29:35.404"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>model</arg>
+<arg>ไม่มี</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:35.405" level="INFO">Typing text 'ไม่มี' into text field 'model'.</msg>
+<status status="PASS" starttime="20210423 05:29:35.405" endtime="20210423 05:29:36.103"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:36.104" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:36.103" endtime="20210423 05:29:36.973"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ชื่อยี่ห้อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:36.974" endtime="20210423 05:29:37.190"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:37.191" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:37.190" endtime="20210423 05:29:38.063"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>เลือกหมวด (Category)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:38.064" endtime="20210423 05:29:38.280"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:38.281" level="INFO">Clicking element '//*[@id="cateTD"]/table/tbody/tr[2]/td[1]/select/option[2]'.</msg>
+<status status="PASS" starttime="20210423 05:29:38.281" endtime="20210423 05:29:38.734"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:38.735" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:38.734" endtime="20210423 05:29:39.602"/>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<arg>ประเภทสินค้า: Category(Tags)</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210423 05:29:39.603" endtime="20210423 05:29:39.820"/>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<msg timestamp="20210423 05:29:39.821" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" starttime="20210423 05:29:39.821" endtime="20210423 05:29:40.691"/>
+</kw>
+<kw name="Alert Should Be Present" library="Selenium2Library">
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<msg timestamp="20210423 05:29:40.692" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210423 05:29:40.692" endtime="20210423 05:29:41.317"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210423 05:29:41.318" endtime="20210423 05:29:43.647"/>
+</kw>
+<status status="PASS" starttime="20210423 05:29:27.498" endtime="20210423 05:29:43.648"/>
+</test>
+<status status="PASS" starttime="20210423 05:28:02.771" endtime="20210423 05:29:43.650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Shop">Shop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
