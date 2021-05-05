@@ -108,27 +108,27 @@ TC08 - กรอก Email ที่ไม่มีอยู่จริง (test
     Click Element       except_privacy_policy
     Click Element       submit
 
-TC09 - ไม่ใส่ Captcha ที่ระบบให้มา (test to fail)
-    Click Element        g_helpdesk
-    Select From List By Value       g_helpdesk      107
-    Input Text      notify_address      nontasabs@gmail.com
-    Input Text      message        แจ้งปัญหาการใช้งาน
-    Choose File     ${pic_report}     ${imgFile}
-    Input Text      name        james
-    Click Element       except_privacy_policy
-    Click Element       submit
+# TC09 - ไม่ใส่ Captcha ที่ระบบให้มา (test to fail)
+#     Click Element        g_helpdesk
+#     Select From List By Value       g_helpdesk      107
+#     Input Text      notify_address      nontasabs@gmail.com
+#     Input Text      message        แจ้งปัญหาการใช้งาน
+#     Choose File     ${pic_report}     ${imgFile}
+#     Input Text      name        james
+#     Click Element       except_privacy_policy
+#     Click Element       submit
 
 
-TC10 - กรอก Captcha ให้ผิดจากที่ระบบกำหนด (test to fail)
-    Click Element        g_helpdesk
-    Select From List By Value       g_helpdesk      107
-    Input Text      notify_address      nontasabs@gmail.com
-    Input Text      message        แจ้งปัญหาการใช้งาน
-    Choose File     ${pic_report}     ${imgFile}
-    Input Text      name        james
-    Input Text       type_code      222
-    Click Element       except_privacy_policy
-    Click Element       submit
+# TC10 - กรอก Captcha ให้ผิดจากที่ระบบกำหนด (test to fail)
+#     Click Element        g_helpdesk
+#     Select From List By Value       g_helpdesk      107
+#     Input Text      notify_address      nontasabs@gmail.com
+#     Input Text      message        แจ้งปัญหาการใช้งาน
+#     Choose File     ${pic_report}     ${imgFile}
+#     Input Text      name        james
+#     Input Text       type_code      222
+#     Click Element       except_privacy_policy
+#     Click Element       submit
     
 
 *** Keywords ***
