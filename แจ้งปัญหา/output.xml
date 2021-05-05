@@ -1,883 +1,883 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.1 (Python 3.8.2 on win32)" generated="20210423 01:15:26.780" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.1 (Python 3.9.0 on win32)" generated="20210505 23:53:39.109" rpa="false" schemaversion="2">
 <suite id="s1" name="Report" source="C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\report.robot">
 <test id="s1-t1" name="TC01 - กรอกข้อมูลแจ้งปัญหาครบถ้วน (test to pass)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:15:26.980" endtime="20210423 01:15:26.981"/>
+<status status="PASS" starttime="20210505 23:53:39.269" endtime="20210505 23:53:39.270"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:15:26.981" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:15:26.981" endtime="20210423 01:15:28.362"/>
+<msg timestamp="20210505 23:53:39.270" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:53:39.270" endtime="20210505 23:53:40.649"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:15:28.362" endtime="20210423 01:15:28.673"/>
+<status status="PASS" starttime="20210505 23:53:40.649" endtime="20210505 23:53:40.959"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:26.980" endtime="20210423 01:15:28.673"/>
+<status status="PASS" starttime="20210505 23:53:39.269" endtime="20210505 23:53:40.959"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:28.673" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:15:28.673" endtime="20210423 01:15:29.120"/>
+<msg timestamp="20210505 23:53:40.959" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:53:40.959" endtime="20210505 23:53:41.402"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:15:29.120" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:15:29.120" endtime="20210423 01:15:30.368"/>
+<msg timestamp="20210505 23:53:41.402" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:53:41.402" endtime="20210505 23:53:42.649"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:30.368" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:15:30.368" endtime="20210423 01:15:31.035"/>
+<msg timestamp="20210505 23:53:42.649" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:53:42.649" endtime="20210505 23:53:43.321"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:31.035" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:15:31.035" endtime="20210423 01:15:31.690"/>
+<msg timestamp="20210505 23:53:43.321" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:53:43.321" endtime="20210505 23:53:43.981"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:15:31.691" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:15:31.690" endtime="20210423 01:15:32.116"/>
+<msg timestamp="20210505 23:53:43.981" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:53:43.981" endtime="20210505 23:53:44.404"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:32.116" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:15:32.116" endtime="20210423 01:15:32.769"/>
+<msg timestamp="20210505 23:53:44.404" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:53:44.404" endtime="20210505 23:53:45.058"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:32.769" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:15:32.769" endtime="20210423 01:15:33.202"/>
+<msg timestamp="20210505 23:53:45.058" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:53:45.058" endtime="20210505 23:53:45.492"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:15:37.702" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:15:33.202" endtime="20210423 01:15:37.702"/>
+<msg timestamp="20210505 23:53:49.992" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:53:45.492" endtime="20210505 23:53:49.992"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:37.703" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:15:37.702" endtime="20210423 01:15:38.134"/>
+<msg timestamp="20210505 23:53:49.992" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:53:49.992" endtime="20210505 23:53:50.425"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:38.134" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:15:38.134" endtime="20210423 01:15:38.575"/>
+<msg timestamp="20210505 23:53:50.425" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:53:50.425" endtime="20210505 23:53:50.865"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:15:38.575" endtime="20210423 01:15:40.813"/>
+<status status="PASS" starttime="20210505 23:53:50.865" endtime="20210505 23:53:53.102"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:26.978" endtime="20210423 01:15:40.813"/>
+<status status="PASS" starttime="20210505 23:53:39.268" endtime="20210505 23:53:53.102"/>
 </test>
 <test id="s1-t2" name="TC02 - กรอกข้อมูลแจ้งปัญหาไม่ครบ (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:15:40.816" endtime="20210423 01:15:40.816"/>
+<status status="PASS" starttime="20210505 23:53:53.104" endtime="20210505 23:53:53.105"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:15:40.817" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:15:40.816" endtime="20210423 01:15:42.188"/>
+<msg timestamp="20210505 23:53:53.105" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:53:53.105" endtime="20210505 23:53:54.476"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:15:42.188" endtime="20210423 01:15:42.500"/>
+<status status="PASS" starttime="20210505 23:53:54.476" endtime="20210505 23:53:54.786"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:40.816" endtime="20210423 01:15:42.500"/>
+<status status="PASS" starttime="20210505 23:53:53.104" endtime="20210505 23:53:54.786"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:42.501" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:15:42.500" endtime="20210423 01:15:43.164"/>
+<msg timestamp="20210505 23:53:54.787" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:53:54.786" endtime="20210505 23:53:55.453"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>area_message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:43.164" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'area_message'.</msg>
-<status status="PASS" starttime="20210423 01:15:43.164" endtime="20210423 01:15:43.819"/>
+<msg timestamp="20210505 23:53:55.453" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'area_message'.</msg>
+<status status="PASS" starttime="20210505 23:53:55.453" endtime="20210505 23:53:56.111"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:15:43.820" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:15:43.819" endtime="20210423 01:15:44.246"/>
+<msg timestamp="20210505 23:53:56.111" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:53:56.111" endtime="20210505 23:53:56.535"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:44.246" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:15:44.246" endtime="20210423 01:15:44.902"/>
+<msg timestamp="20210505 23:53:56.535" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:53:56.535" endtime="20210505 23:53:57.188"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:44.902" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:15:44.902" endtime="20210423 01:15:45.336"/>
+<msg timestamp="20210505 23:53:57.188" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:53:57.188" endtime="20210505 23:53:57.620"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:15:49.837" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:15:45.336" endtime="20210423 01:15:49.837"/>
+<msg timestamp="20210505 23:54:02.120" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:53:57.620" endtime="20210505 23:54:02.120"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:49.837" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:15:49.837" endtime="20210423 01:15:50.269"/>
+<msg timestamp="20210505 23:54:02.120" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:54:02.120" endtime="20210505 23:54:02.553"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:50.269" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:15:50.269" endtime="20210423 01:15:50.705"/>
+<msg timestamp="20210505 23:54:02.553" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:54:02.553" endtime="20210505 23:54:02.986"/>
 </kw>
 <kw name="Alert Should Be Present" library="Selenium2Library">
 <arg>กรุณาเลือกปัญหาที่ท่านต้องการสอบถามด้วยค่ะ</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210423 01:15:50.706" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210423 01:15:50.705" endtime="20210423 01:15:51.308"/>
+<msg timestamp="20210505 23:54:02.986" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210505 23:54:02.986" endtime="20210505 23:54:03.589"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:15:51.308" endtime="20210423 01:15:53.546"/>
+<status status="PASS" starttime="20210505 23:54:03.589" endtime="20210505 23:54:05.833"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:40.814" endtime="20210423 01:15:53.546"/>
+<status status="PASS" starttime="20210505 23:53:53.103" endtime="20210505 23:54:05.833"/>
 </test>
 <test id="s1-t3" name="TC03 - กรอกปัญหาแต่ไม่กรอกอีเมล์ผู้แจ้ง (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:15:53.549" endtime="20210423 01:15:53.550"/>
+<status status="PASS" starttime="20210505 23:54:05.836" endtime="20210505 23:54:05.836"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:15:53.550" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:15:53.550" endtime="20210423 01:15:54.927"/>
+<msg timestamp="20210505 23:54:05.836" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:54:05.836" endtime="20210505 23:54:07.222"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:15:54.927" endtime="20210423 01:15:55.238"/>
+<status status="PASS" starttime="20210505 23:54:07.222" endtime="20210505 23:54:07.533"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:53.549" endtime="20210423 01:15:55.238"/>
+<status status="PASS" starttime="20210505 23:54:05.835" endtime="20210505 23:54:07.533"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:55.238" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:15:55.238" endtime="20210423 01:15:55.682"/>
+<msg timestamp="20210505 23:54:07.533" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:54:07.533" endtime="20210505 23:54:07.977"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:15:55.682" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:15:55.682" endtime="20210423 01:15:56.929"/>
+<msg timestamp="20210505 23:54:07.977" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:54:07.977" endtime="20210505 23:54:09.224"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:56.929" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:15:56.929" endtime="20210423 01:15:57.592"/>
+<msg timestamp="20210505 23:54:09.224" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:54:09.224" endtime="20210505 23:54:09.885"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:15:57.592" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:15:57.592" endtime="20210423 01:15:58.018"/>
+<msg timestamp="20210505 23:54:09.885" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:54:09.885" endtime="20210505 23:54:10.310"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:58.018" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:15:58.018" endtime="20210423 01:15:58.674"/>
+<msg timestamp="20210505 23:54:10.310" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:54:10.310" endtime="20210505 23:54:10.965"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:15:58.674" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:15:58.674" endtime="20210423 01:15:59.108"/>
+<msg timestamp="20210505 23:54:10.965" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:54:10.965" endtime="20210505 23:54:11.401"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:16:03.608" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:15:59.108" endtime="20210423 01:16:03.608"/>
+<msg timestamp="20210505 23:54:15.901" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:54:11.401" endtime="20210505 23:54:15.901"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:03.608" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:16:03.608" endtime="20210423 01:16:04.040"/>
+<msg timestamp="20210505 23:54:15.901" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:54:15.901" endtime="20210505 23:54:16.334"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:04.041" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:16:04.040" endtime="20210423 01:16:04.474"/>
+<msg timestamp="20210505 23:54:16.335" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:54:16.334" endtime="20210505 23:54:16.768"/>
 </kw>
 <kw name="Alert Should Be Present" library="Selenium2Library">
 <arg>กรุณากรอกอีเมล์ผู้ส่งด้วยค่ะ</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210423 01:16:04.474" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210423 01:16:04.474" endtime="20210423 01:16:05.077"/>
+<msg timestamp="20210505 23:54:16.768" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210505 23:54:16.768" endtime="20210505 23:54:17.371"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:16:05.077" endtime="20210423 01:16:07.545"/>
+<status status="PASS" starttime="20210505 23:54:17.371" endtime="20210505 23:54:19.613"/>
 </kw>
-<status status="PASS" starttime="20210423 01:15:53.547" endtime="20210423 01:16:07.545"/>
+<status status="PASS" starttime="20210505 23:54:05.834" endtime="20210505 23:54:19.613"/>
 </test>
 <test id="s1-t4" name="TC04 - กรอกปัญหา,อีเมล์แต่ไม่กรอกรายละเอียด (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:16:07.548" endtime="20210423 01:16:07.548"/>
+<status status="PASS" starttime="20210505 23:54:19.615" endtime="20210505 23:54:19.616"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:16:07.549" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:16:07.549" endtime="20210423 01:16:08.931"/>
+<msg timestamp="20210505 23:54:19.616" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:54:19.616" endtime="20210505 23:54:20.990"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:16:08.931" endtime="20210423 01:16:09.241"/>
+<status status="PASS" starttime="20210505 23:54:20.990" endtime="20210505 23:54:21.300"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:07.548" endtime="20210423 01:16:09.241"/>
+<status status="PASS" starttime="20210505 23:54:19.615" endtime="20210505 23:54:21.300"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:09.242" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:16:09.241" endtime="20210423 01:16:09.687"/>
+<msg timestamp="20210505 23:54:21.300" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:54:21.300" endtime="20210505 23:54:21.744"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>25</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:16:09.687" level="INFO">Selecting options from selection list 'g_helpdesk' by value 25.</msg>
-<status status="PASS" starttime="20210423 01:16:09.687" endtime="20210423 01:16:10.935"/>
+<msg timestamp="20210505 23:54:21.744" level="INFO">Selecting options from selection list 'g_helpdesk' by value 25.</msg>
+<status status="PASS" starttime="20210505 23:54:21.744" endtime="20210505 23:54:22.993"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:10.935" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:16:10.935" endtime="20210423 01:16:11.603"/>
+<msg timestamp="20210505 23:54:22.993" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:54:22.993" endtime="20210505 23:54:23.664"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:16:11.603" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:16:11.603" endtime="20210423 01:16:12.028"/>
+<msg timestamp="20210505 23:54:23.664" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:54:23.664" endtime="20210505 23:54:24.089"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:12.028" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:16:12.028" endtime="20210423 01:16:12.679"/>
+<msg timestamp="20210505 23:54:24.089" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:54:24.089" endtime="20210505 23:54:24.741"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:12.679" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:16:12.679" endtime="20210423 01:16:13.111"/>
+<msg timestamp="20210505 23:54:24.741" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:54:24.741" endtime="20210505 23:54:25.172"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:16:17.611" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:16:13.111" endtime="20210423 01:16:17.611"/>
+<msg timestamp="20210505 23:54:29.673" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:54:25.172" endtime="20210505 23:54:29.673"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:17.611" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:16:17.611" endtime="20210423 01:16:18.042"/>
+<msg timestamp="20210505 23:54:29.673" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:54:29.673" endtime="20210505 23:54:30.104"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:18.042" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:16:18.042" endtime="20210423 01:16:18.476"/>
+<msg timestamp="20210505 23:54:30.104" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:54:30.104" endtime="20210505 23:54:30.538"/>
 </kw>
 <kw name="Alert Should Be Present" library="Selenium2Library">
 <arg>กรุณากรอกรายละเอียดด้วยค่ะ</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210423 01:16:18.476" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210423 01:16:18.476" endtime="20210423 01:16:19.080"/>
+<msg timestamp="20210505 23:54:30.538" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210505 23:54:30.538" endtime="20210505 23:54:31.142"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:16:19.080" endtime="20210423 01:16:21.320"/>
+<status status="PASS" starttime="20210505 23:54:31.142" endtime="20210505 23:54:33.376"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:07.546" endtime="20210423 01:16:21.320"/>
+<status status="PASS" starttime="20210505 23:54:19.614" endtime="20210505 23:54:33.376"/>
 </test>
 <test id="s1-t5" name="TC05 - กรอกปัญหา,อีเมล์,รายละเอียด แต่ไม่ใส่รูปภาพแนบ (test to pass)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:16:21.324" endtime="20210423 01:16:21.324"/>
+<status status="PASS" starttime="20210505 23:54:33.379" endtime="20210505 23:54:33.379"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:16:21.324" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:16:21.324" endtime="20210423 01:16:22.697"/>
+<msg timestamp="20210505 23:54:33.379" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:54:33.379" endtime="20210505 23:54:34.751"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:16:22.697" endtime="20210423 01:16:23.009"/>
+<status status="PASS" starttime="20210505 23:54:34.751" endtime="20210505 23:54:35.063"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:21.323" endtime="20210423 01:16:23.009"/>
+<status status="PASS" starttime="20210505 23:54:33.378" endtime="20210505 23:54:35.063"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:23.009" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:16:23.009" endtime="20210423 01:16:23.451"/>
+<msg timestamp="20210505 23:54:35.063" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:54:35.063" endtime="20210505 23:54:35.510"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:16:23.451" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:16:23.451" endtime="20210423 01:16:24.699"/>
+<msg timestamp="20210505 23:54:35.510" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:54:35.510" endtime="20210505 23:54:36.757"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:24.699" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:16:24.699" endtime="20210423 01:16:25.368"/>
+<msg timestamp="20210505 23:54:36.757" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:54:36.757" endtime="20210505 23:54:37.427"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:25.368" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:16:25.368" endtime="20210423 01:16:26.024"/>
+<msg timestamp="20210505 23:54:37.427" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:54:37.427" endtime="20210505 23:54:38.085"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:26.024" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:16:26.024" endtime="20210423 01:16:26.675"/>
+<msg timestamp="20210505 23:54:38.085" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:54:38.085" endtime="20210505 23:54:38.736"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:26.675" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:16:26.675" endtime="20210423 01:16:27.107"/>
+<msg timestamp="20210505 23:54:38.736" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:54:38.736" endtime="20210505 23:54:39.167"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:16:31.607" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:16:27.107" endtime="20210423 01:16:31.607"/>
+<msg timestamp="20210505 23:54:43.668" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:54:39.167" endtime="20210505 23:54:43.668"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:31.607" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:16:31.607" endtime="20210423 01:16:32.040"/>
+<msg timestamp="20210505 23:54:43.668" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:54:43.668" endtime="20210505 23:54:44.100"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:32.040" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:16:32.040" endtime="20210423 01:16:32.480"/>
+<msg timestamp="20210505 23:54:44.100" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:54:44.100" endtime="20210505 23:54:44.544"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:16:32.480" endtime="20210423 01:16:34.714"/>
+<status status="PASS" starttime="20210505 23:54:44.544" endtime="20210505 23:54:46.778"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:21.321" endtime="20210423 01:16:34.714"/>
+<status status="PASS" starttime="20210505 23:54:33.377" endtime="20210505 23:54:46.778"/>
 </test>
 <test id="s1-t6" name="TC06 - กรอกปัญหา, อีเมล์,รายละเอียด,รูปภาพ แต่ไม่กรอกชื่อผู้ติดต่อ (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:16:34.718" endtime="20210423 01:16:34.719"/>
+<status status="PASS" starttime="20210505 23:54:46.781" endtime="20210505 23:54:46.781"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:16:34.719" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:16:34.719" endtime="20210423 01:16:36.104"/>
+<msg timestamp="20210505 23:54:46.781" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:54:46.781" endtime="20210505 23:54:48.150"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:16:36.104" endtime="20210423 01:16:36.414"/>
+<status status="PASS" starttime="20210505 23:54:48.150" endtime="20210505 23:54:48.461"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:34.718" endtime="20210423 01:16:36.414"/>
+<status status="PASS" starttime="20210505 23:54:46.781" endtime="20210505 23:54:48.461"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:36.414" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:16:36.414" endtime="20210423 01:16:36.861"/>
+<msg timestamp="20210505 23:54:48.462" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:54:48.461" endtime="20210505 23:54:48.906"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:16:36.861" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:16:36.861" endtime="20210423 01:16:38.109"/>
+<msg timestamp="20210505 23:54:48.906" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:54:48.906" endtime="20210505 23:54:50.153"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:38.109" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:16:38.109" endtime="20210423 01:16:38.781"/>
+<msg timestamp="20210505 23:54:50.153" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:54:50.153" endtime="20210505 23:54:50.820"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:38.781" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:16:38.781" endtime="20210423 01:16:39.434"/>
+<msg timestamp="20210505 23:54:50.820" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:54:50.820" endtime="20210505 23:54:51.476"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:16:39.435" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:16:39.434" endtime="20210423 01:16:39.860"/>
+<msg timestamp="20210505 23:54:51.476" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:54:51.476" endtime="20210505 23:54:51.902"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:39.860" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:16:39.860" endtime="20210423 01:16:40.292"/>
+<msg timestamp="20210505 23:54:51.902" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:54:51.902" endtime="20210505 23:54:52.334"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:16:44.793" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:16:40.292" endtime="20210423 01:16:44.793"/>
+<msg timestamp="20210505 23:54:56.836" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:54:52.334" endtime="20210505 23:54:56.836"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:44.793" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:16:44.793" endtime="20210423 01:16:45.225"/>
+<msg timestamp="20210505 23:54:56.836" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:54:56.836" endtime="20210505 23:54:57.269"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:45.225" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:16:45.225" endtime="20210423 01:16:45.660"/>
+<msg timestamp="20210505 23:54:57.269" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:54:57.269" endtime="20210505 23:54:57.704"/>
 </kw>
 <kw name="Alert Should Be Present" library="Selenium2Library">
 <arg>กรุณากรอกชื่อผู้ส่งด้วยค่ะ</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210423 01:16:45.660" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210423 01:16:45.660" endtime="20210423 01:16:46.262"/>
+<msg timestamp="20210505 23:54:57.704" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210505 23:54:57.704" endtime="20210505 23:54:58.308"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:16:46.262" endtime="20210423 01:16:48.702"/>
+<status status="PASS" starttime="20210505 23:54:58.308" endtime="20210505 23:55:00.541"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:34.715" endtime="20210423 01:16:48.702"/>
+<status status="PASS" starttime="20210505 23:54:46.779" endtime="20210505 23:55:00.541"/>
 </test>
 <test id="s1-t7" name="TC07 - กรอกทุกอย่างแต่ไม่เลือกยอมรับนโยบาย (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:16:48.705" endtime="20210423 01:16:48.706"/>
+<status status="PASS" starttime="20210505 23:55:00.544" endtime="20210505 23:55:00.544"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:16:48.706" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:16:48.706" endtime="20210423 01:16:50.073"/>
+<msg timestamp="20210505 23:55:00.544" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:55:00.544" endtime="20210505 23:55:01.921"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:16:50.073" endtime="20210423 01:16:50.384"/>
+<status status="PASS" starttime="20210505 23:55:01.921" endtime="20210505 23:55:02.233"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:48.705" endtime="20210423 01:16:50.384"/>
+<status status="PASS" starttime="20210505 23:55:00.544" endtime="20210505 23:55:02.233"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:50.384" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:16:50.384" endtime="20210423 01:16:50.827"/>
+<msg timestamp="20210505 23:55:02.233" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:55:02.233" endtime="20210505 23:55:02.678"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:16:50.827" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:16:50.827" endtime="20210423 01:16:52.075"/>
+<msg timestamp="20210505 23:55:02.678" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:55:02.678" endtime="20210505 23:55:03.924"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:52.075" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:16:52.075" endtime="20210423 01:16:52.748"/>
+<msg timestamp="20210505 23:55:03.924" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:55:03.924" endtime="20210505 23:55:04.593"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:52.748" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:16:52.748" endtime="20210423 01:16:53.402"/>
+<msg timestamp="20210505 23:55:04.593" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:55:04.593" endtime="20210505 23:55:05.250"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:16:53.403" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:16:53.402" endtime="20210423 01:16:53.829"/>
+<msg timestamp="20210505 23:55:05.250" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:55:05.250" endtime="20210505 23:55:05.674"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:53.829" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:16:53.829" endtime="20210423 01:16:54.478"/>
+<msg timestamp="20210505 23:55:05.674" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:55:05.674" endtime="20210505 23:55:06.324"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:54.478" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:16:54.478" endtime="20210423 01:16:54.913"/>
+<msg timestamp="20210505 23:55:06.324" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:55:06.324" endtime="20210505 23:55:06.757"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:16:59.413" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:16:54.913" endtime="20210423 01:16:59.413"/>
+<msg timestamp="20210505 23:55:11.258" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:55:06.757" endtime="20210505 23:55:11.258"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:16:59.414" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:16:59.413" endtime="20210423 01:16:59.848"/>
+<msg timestamp="20210505 23:55:11.258" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:55:11.258" endtime="20210505 23:55:11.692"/>
 </kw>
 <kw name="Alert Should Be Present" library="Selenium2Library">
 <arg>กรุณายอมรับนโยบายข้อมูลส่วนบุคคล</arg>
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20210423 01:16:59.848" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20210423 01:16:59.848" endtime="20210423 01:17:00.452"/>
+<msg timestamp="20210505 23:55:11.692" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210505 23:55:11.692" endtime="20210505 23:55:12.295"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:17:00.452" endtime="20210423 01:17:02.688"/>
+<status status="PASS" starttime="20210505 23:55:12.295" endtime="20210505 23:55:14.535"/>
 </kw>
-<status status="PASS" starttime="20210423 01:16:48.703" endtime="20210423 01:17:02.688"/>
+<status status="PASS" starttime="20210505 23:55:00.542" endtime="20210505 23:55:14.535"/>
 </test>
-<test id="s1-t8" name="TC07 - กรอก Email ที่ไม่มีอยู่จริง (test to fail)">
+<test id="s1-t8" name="TC08 - กรอก Email ที่ไม่มีอยู่จริง (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:17:02.691" endtime="20210423 01:17:02.691"/>
+<status status="PASS" starttime="20210505 23:55:14.537" endtime="20210505 23:55:14.537"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:17:02.692" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:17:02.691" endtime="20210423 01:17:04.070"/>
+<msg timestamp="20210505 23:55:14.537" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:55:14.537" endtime="20210505 23:55:15.929"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:17:04.070" endtime="20210423 01:17:04.380"/>
+<status status="PASS" starttime="20210505 23:55:15.929" endtime="20210505 23:55:16.242"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:02.690" endtime="20210423 01:17:04.380"/>
+<status status="PASS" starttime="20210505 23:55:14.537" endtime="20210505 23:55:16.242"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:04.380" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:17:04.380" endtime="20210423 01:17:04.824"/>
+<msg timestamp="20210505 23:55:16.242" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:55:16.242" endtime="20210505 23:55:16.687"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:17:04.824" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:17:04.824" endtime="20210423 01:17:06.071"/>
+<msg timestamp="20210505 23:55:16.687" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:55:16.687" endtime="20210505 23:55:17.934"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>aasdoikjqweiojqweiojqwe@asdpoqkweopqwke.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:06.071" level="INFO">Typing text 'aasdoikjqweiojqweiojqwe@asdpoqkweopqwke.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:17:06.071" endtime="20210423 01:17:06.752"/>
+<msg timestamp="20210505 23:55:17.934" level="INFO">Typing text 'aasdoikjqweiojqweiojqwe@asdpoqkweopqwke.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:55:17.934" endtime="20210505 23:55:18.612"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:06.752" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:17:06.752" endtime="20210423 01:17:07.411"/>
+<msg timestamp="20210505 23:55:18.612" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:55:18.612" endtime="20210505 23:55:19.268"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:17:07.412" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:17:07.411" endtime="20210423 01:17:07.836"/>
+<msg timestamp="20210505 23:55:19.268" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:55:19.268" endtime="20210505 23:55:19.694"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:07.836" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:17:07.836" endtime="20210423 01:17:08.486"/>
+<msg timestamp="20210505 23:55:19.694" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:55:19.694" endtime="20210505 23:55:20.347"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>type_code</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:08.486" level="INFO">Clicking element 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:17:08.486" endtime="20210423 01:17:08.919"/>
+<msg timestamp="20210505 23:55:20.347" level="INFO">Clicking element 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:55:20.347" endtime="20210505 23:55:20.781"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210423 01:17:13.419" level="INFO">Slept 4 seconds 500 milliseconds</msg>
-<status status="PASS" starttime="20210423 01:17:08.919" endtime="20210423 01:17:13.419"/>
+<msg timestamp="20210505 23:55:25.282" level="INFO">Slept 4 seconds 500 milliseconds</msg>
+<status status="PASS" starttime="20210505 23:55:20.781" endtime="20210505 23:55:25.282"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:13.420" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:17:13.419" endtime="20210423 01:17:13.852"/>
+<msg timestamp="20210505 23:55:25.282" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:55:25.282" endtime="20210505 23:55:25.713"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:13.852" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:17:13.852" endtime="20210423 01:17:14.291"/>
+<msg timestamp="20210505 23:55:25.713" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:55:25.713" endtime="20210505 23:55:26.152"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:17:14.291" endtime="20210423 01:17:16.530"/>
+<status status="PASS" starttime="20210505 23:55:26.152" endtime="20210505 23:55:28.387"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:02.689" endtime="20210423 01:17:16.530"/>
+<status status="PASS" starttime="20210505 23:55:14.536" endtime="20210505 23:55:28.387"/>
 </test>
-<test id="s1-t9" name="TC08 - ไม่ใส่ Captcha ที่ระบบให้มา (test to fail)">
+<test id="s1-t9" name="TC09 - ไม่ใส่ Captcha ที่ระบบให้มา (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:17:16.533" endtime="20210423 01:17:16.534"/>
+<status status="PASS" starttime="20210505 23:55:28.389" endtime="20210505 23:55:28.389"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:17:16.534" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:17:16.534" endtime="20210423 01:17:17.911"/>
+<msg timestamp="20210505 23:55:28.390" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:55:28.390" endtime="20210505 23:55:29.773"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:17:17.911" endtime="20210423 01:17:18.222"/>
+<status status="PASS" starttime="20210505 23:55:29.773" endtime="20210505 23:55:30.084"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:16.533" endtime="20210423 01:17:18.222"/>
+<status status="PASS" starttime="20210505 23:55:28.389" endtime="20210505 23:55:30.084"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:18.223" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:17:18.222" endtime="20210423 01:17:18.665"/>
+<msg timestamp="20210505 23:55:30.084" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:55:30.084" endtime="20210505 23:55:30.528"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:17:18.665" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:17:18.665" endtime="20210423 01:17:19.909"/>
+<msg timestamp="20210505 23:55:30.528" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:55:30.528" endtime="20210505 23:55:31.774"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:19.909" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:17:19.909" endtime="20210423 01:17:20.576"/>
+<msg timestamp="20210505 23:55:31.774" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:55:31.774" endtime="20210505 23:55:32.441"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:20.576" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:17:20.576" endtime="20210423 01:17:21.231"/>
+<msg timestamp="20210505 23:55:32.441" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:55:32.441" endtime="20210505 23:55:33.101"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:17:21.231" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:17:21.231" endtime="20210423 01:17:21.655"/>
+<msg timestamp="20210505 23:55:33.101" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:55:33.101" endtime="20210505 23:55:33.525"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:21.655" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:17:21.655" endtime="20210423 01:17:22.304"/>
+<msg timestamp="20210505 23:55:33.525" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:55:33.525" endtime="20210505 23:55:34.177"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:22.304" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:17:22.304" endtime="20210423 01:17:22.733"/>
+<msg timestamp="20210505 23:55:34.177" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:55:34.177" endtime="20210505 23:55:34.609"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:22.733" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:17:22.733" endtime="20210423 01:17:23.172"/>
+<msg timestamp="20210505 23:55:34.609" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:55:34.609" endtime="20210505 23:55:35.048"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:17:23.172" endtime="20210423 01:17:25.414"/>
+<status status="PASS" starttime="20210505 23:55:35.048" endtime="20210505 23:55:37.278"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:16.531" endtime="20210423 01:17:25.414"/>
+<status status="PASS" starttime="20210505 23:55:28.388" endtime="20210505 23:55:37.278"/>
 </test>
-<test id="s1-t10" name="TC09 - กรอก Captcha ให้ผิดที่ระบบกำหนด (test to fail)">
+<test id="s1-t10" name="TC10 - กรอก Captcha ให้ผิดจากที่ระบบกำหนด (test to fail)">
 <kw name="Open Web Site Pantipmarket On Browser" type="SETUP">
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <arg>0.2 seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20210423 01:17:25.417" endtime="20210423 01:17:25.417"/>
+<status status="PASS" starttime="20210505 23:55:37.281" endtime="20210505 23:55:37.281"/>
 </kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>url=http://www.pantip.com/members/helpdesk/market.php</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210423 01:17:25.418" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
-<status status="PASS" starttime="20210423 01:17:25.417" endtime="20210423 01:17:26.782"/>
+<msg timestamp="20210505 23:55:37.281" level="INFO">Opening browser 'chrome' to base url 'http://www.pantip.com/members/helpdesk/market.php'.</msg>
+<status status="PASS" starttime="20210505 23:55:37.281" endtime="20210505 23:55:38.652"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210423 01:17:26.782" endtime="20210423 01:17:27.093"/>
+<status status="PASS" starttime="20210505 23:55:38.652" endtime="20210505 23:55:38.964"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:25.417" endtime="20210423 01:17:27.093"/>
+<status status="PASS" starttime="20210505 23:55:37.280" endtime="20210505 23:55:38.964"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:27.093" level="INFO">Clicking element 'g_helpdesk'.</msg>
-<status status="PASS" starttime="20210423 01:17:27.093" endtime="20210423 01:17:27.536"/>
+<msg timestamp="20210505 23:55:38.964" level="INFO">Clicking element 'g_helpdesk'.</msg>
+<status status="PASS" starttime="20210505 23:55:38.964" endtime="20210505 23:55:39.407"/>
 </kw>
 <kw name="Select From List By Value" library="Selenium2Library">
 <arg>g_helpdesk</arg>
 <arg>107</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20210423 01:17:27.537" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
-<status status="PASS" starttime="20210423 01:17:27.536" endtime="20210423 01:17:28.783"/>
+<msg timestamp="20210505 23:55:39.407" level="INFO">Selecting options from selection list 'g_helpdesk' by value 107.</msg>
+<status status="PASS" starttime="20210505 23:55:39.407" endtime="20210505 23:55:40.652"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>notify_address</arg>
 <arg>asdasd@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:28.783" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
-<status status="PASS" starttime="20210423 01:17:28.783" endtime="20210423 01:17:29.452"/>
+<msg timestamp="20210505 23:55:40.652" level="INFO">Typing text 'asdasd@gmail.com' into text field 'notify_address'.</msg>
+<status status="PASS" starttime="20210505 23:55:40.652" endtime="20210505 23:55:41.322"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>message</arg>
 <arg>แจ้งปัญหาการใช้งาน</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:29.452" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
-<status status="PASS" starttime="20210423 01:17:29.452" endtime="20210423 01:17:30.108"/>
+<msg timestamp="20210505 23:55:41.322" level="INFO">Typing text 'แจ้งปัญหาการใช้งาน' into text field 'message'.</msg>
+<status status="PASS" starttime="20210505 23:55:41.322" endtime="20210505 23:55:41.979"/>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <arg>${pic_report}</arg>
 <arg>${imgFile}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<msg timestamp="20210423 01:17:30.109" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
-<status status="PASS" starttime="20210423 01:17:30.108" endtime="20210423 01:17:30.534"/>
+<msg timestamp="20210505 23:55:41.979" level="INFO">Sending C:\Users\Jamemhee\Desktop\robot_framework-master\แจ้งปัญหา\jett.jpg to browser.</msg>
+<status status="PASS" starttime="20210505 23:55:41.979" endtime="20210505 23:55:42.405"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>name</arg>
 <arg>james</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:30.534" level="INFO">Typing text 'james' into text field 'name'.</msg>
-<status status="PASS" starttime="20210423 01:17:30.534" endtime="20210423 01:17:31.185"/>
+<msg timestamp="20210505 23:55:42.405" level="INFO">Typing text 'james' into text field 'name'.</msg>
+<status status="PASS" starttime="20210505 23:55:42.405" endtime="20210505 23:55:43.055"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>type_code</arg>
 <arg>222</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:31.185" level="INFO">Typing text '222' into text field 'type_code'.</msg>
-<status status="PASS" starttime="20210423 01:17:31.185" endtime="20210423 01:17:31.837"/>
+<msg timestamp="20210505 23:55:43.055" level="INFO">Typing text '222' into text field 'type_code'.</msg>
+<status status="PASS" starttime="20210505 23:55:43.055" endtime="20210505 23:55:43.703"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>except_privacy_policy</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:31.837" level="INFO">Clicking element 'except_privacy_policy'.</msg>
-<status status="PASS" starttime="20210423 01:17:31.837" endtime="20210423 01:17:32.269"/>
+<msg timestamp="20210505 23:55:43.703" level="INFO">Clicking element 'except_privacy_policy'.</msg>
+<status status="PASS" starttime="20210505 23:55:43.703" endtime="20210505 23:55:44.134"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210423 01:17:32.270" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20210423 01:17:32.269" endtime="20210423 01:17:32.712"/>
+<msg timestamp="20210505 23:55:44.134" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20210505 23:55:44.134" endtime="20210505 23:55:44.576"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210423 01:17:32.712" endtime="20210423 01:17:34.952"/>
+<status status="PASS" starttime="20210505 23:55:44.576" endtime="20210505 23:55:47.168"/>
 </kw>
-<status status="PASS" starttime="20210423 01:17:25.415" endtime="20210423 01:17:34.952"/>
+<status status="PASS" starttime="20210505 23:55:37.279" endtime="20210505 23:55:47.168"/>
 </test>
-<status status="PASS" starttime="20210423 01:15:26.781" endtime="20210423 01:17:34.954"/>
+<status status="PASS" starttime="20210505 23:53:39.110" endtime="20210505 23:55:47.169"/>
 </suite>
 <statistics>
 <total>
